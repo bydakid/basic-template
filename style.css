@@ -12,6 +12,11 @@ body {
 
 .zone:hover {
     color: black;
+    box-shadow: rgb(255, 120, 120) 10px 10px 10px;
+}
+
+.box:hover{
+    transform: rotate(-2deg);
 }
 
 
@@ -21,8 +26,13 @@ body {
     list-style: none;
     font-size: 1em;
     margin: 0;
-    background-color: rgb(251, 114, 114);
+    background-color: rgb(114, 162, 251);
+}
 
+.stick{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,7 +61,10 @@ a {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background-color: rgb(150, 251, 114);
+}
+
+.cover{
+    width: 30%;
 }
 
 
@@ -59,6 +72,7 @@ a {
 .grid-wrapper {
     background-color: rgb(114, 162, 251);
     display: grid;
+    padding: 4% 2%;
     grid-gap: 50px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
@@ -69,9 +83,9 @@ a {
 }
 
 .box {
-    background-color: rgba(255, 255, 255, 0.728);
-    padding: 20%;
-    margin: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 10% 20%;
+    margin: 3%;
 }
 
 
